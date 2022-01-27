@@ -1,0 +1,44 @@
+<div class="" >
+  <img src="../../../assets/images/main.jpg" id="bg" alt="">
+
+  <div class="login_box_inner">
+    <div class="login-box login_box_back">
+      <div class="login-logo img-circular">
+        <b style="font-size: 50px; font-family: auto; color: coral"><img
+            src="../../../assets/images/unilife-icon.png" alt="Login-header-logo"
+            style="width: 50px" /></b>
+      </div>
+
+      <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+        <form id="admin_login">
+          <div class="form-group form-float form-group-lg">
+            <div class="form-line">
+              <input type="text" [(ngModel)]="username" name="username" value="" placeholder="Username" id="username"
+                class="form-control text_user_form" autocomplete="foo" />
+            </div>
+          </div>
+          <div class="form-group form-float form-group-lg">
+            <div class="form-line">
+              <input type="password" [(ngModel)]="password" name="password" value="" placeholder="Password" id="password"
+                class="form-control" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 remembr_me_div">
+              <div class="checkbox">
+                <label><input type="checkbox" name="remember" /> Remember Me</label>
+              </div>
+            </div>
+            <div class="col-xs-12 btn_login_submt">
+              <button type="submit" (click)="login()" class="btn btn-primary btn-block btn-flat login_class">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>

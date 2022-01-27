@@ -1,0 +1,62 @@
+
+
+<!-- <link href='<?php echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/dataTables.bootstrap.css' rel='stylesheet' media='screen'> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/jquery.dataTables.js'></script> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/dataTables.bootstrap.js'></script> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/extensions/dataTables.buttons.min.js'></script> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/extensions/buttons.flash.min.js'></script> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/extensions/jszip.min.js'></script> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/extensions/pdfmake.min.js'></script> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/extensions/buttons.html5.min.js'></script> -->
+<!-- <script src='<?php //echo base_url(); ?>assets/grocery_crud/themes/datatables/jquery-datatable/extensions/buttons.print.min.js'></script> -->
+
+
+<div class="sraech" style="display: none;">
+   <label for="usr">Search:</label>
+   <input type="text" class="" id="search_val" style="padding: 3px">
+   <!-- <button class="btn btn-info" id="search_btn">Search</button> -->
+</div>
+
+<table class="table table-bordered table-striped table-hover dataTable js-exportable">
+   <thead>
+      <tr>
+         <th>Id</th>
+         <th>User Name</th>
+         <th style="width: 20%">University/School</th>
+         <th>post type</th>
+         <th>Date</th>
+         <th>Action</th>
+      </tr>
+   </thead>
+   <tbody id="table_body">
+      <tr>
+         <td>addaddqww</td>
+         <td>awdwwqdwqdq</td>
+         <td>ddqwqdqdqd</td>
+         <td>qwdqqwdqwdqdqwd</td>
+         <td>qwdqwdqwdwqd</td>
+         <td>
+            <!-- <a style="width: 30px;" href="users/order_history/<?php echo $row['id'] ?>" class="btn bg-light-green btn-circle waves-effect waves-circle waves-float " role="button"><i class="material-icons">remove_red_eye</i></a> -->
+
+            <a target="_blank" style="width: 30px;" href="post/edit/<?php echo $row['id'] ?>" class="btn bg-light-green btn-circle waves-effect waves-circle waves-float " role="button"><i class="material-icons">edit</i></a>
+
+            <a data-id = "<?php echo $row['id'] ?>" target="_blank" style="width: 30px;" class="delete_post btn bg-light-green btn-circle waves-effect waves-circle waves-float " role="button"><i class="material-icons">delete</i></a>
+
+         </td>
+      </tr>
+      <tr class="text-center text-danger">
+         <td colspan="5" >No Record Found</td>
+      </tr>
+    
+   </tbody>
+</table>
+<div id="pagination">1</div>
+<div id="pagination2" style="display:none"></div>
+<div id="search_pagination" style="display:none"></div>
+
+<style type="text/css">
+  .img_sa{
+    width: 100px;
+    height: 100px;
+  }
+</style>
